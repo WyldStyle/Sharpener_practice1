@@ -84,6 +84,8 @@ const UserFeedbackContextProvider = ({ children }) => {
         setFeedBacksTable,
         editMode,
         setEditMode,
+        repaint,
+        setRepaint,
         handleOnChange,
         handleSubmit
 

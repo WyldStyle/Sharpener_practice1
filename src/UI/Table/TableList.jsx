@@ -23,10 +23,9 @@ import TableRow from "./TableRow"
     }))
   }
 
-  const deleteRow = async (_id)=>{
+  const deleteRow = async (_id)=>(
     // console.log(typeof _id);
-    await axios.delete(`${url}delExpEntry/${_id}`)
-    .then((response)=>{
+    await axios.delete(`${url}delExpEntry/${_id}`).then((response)=>{
       setRepaint((prev)=>(!prev))
       window.alert('We lost your valuable input!')
       console.log(response)
@@ -34,7 +33,7 @@ import TableRow from "./TableRow"
     .catch((error)=>{
       console.log(error);
     })
-  }
+  )
 
   return (
     <table className="table table-striped">
